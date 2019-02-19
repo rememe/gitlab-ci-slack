@@ -19,10 +19,11 @@ getTime = (body) ->
   diff = Date.parse(body.object_attributes.finished_at) - Date.parse(body.object_attributes.created_at)
   min = Math.floor((diff / 1000) / 60)
   sec = Math.floor((diff / 1000) % 60)
+
+  min = ('0' + min).slice(-2)
+  sec = ('0' + sec).slice(-2)
+
   "#{min}:#{sec}"
-
-app.post '/webhook/slack', (req, res) ->
-
 
 app.post '/', (req, res) ->
   body = req.body
