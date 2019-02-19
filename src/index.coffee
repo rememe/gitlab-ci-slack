@@ -56,5 +56,3 @@ app.post '/', (req, res) ->
 
   request.post(url: slackUrl, body: data, json: true)
   res.send 'ok'
-
-app.listen port
