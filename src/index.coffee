@@ -36,6 +36,7 @@ app.post '/', (req, res) ->
   projectName = body.project.path_with_namespace
   projectUrl = body.project.web_url
   branch = body.object_attributes.ref
+  environment = body.builds[0].name
   authorName = "#{body.user.name}"
   authorUsername = "#{body.user.username}"
 
@@ -44,7 +45,7 @@ app.post '/', (req, res) ->
 
   pretext = "<#{projectUrl}|#{projectName}>: Gitlab CI pipeline <#{pipelineUrl(body)}|##{pipeline}> of branch <#{branchUrl(body)}|#{branch}> #{status}."
   text = "by #{authorName} (#{authorUsername})"
-  title = branch
+  title = environment
   value = "in #{getTime(body)}"
   color = if success then "#36a64f" else "#ff2e2a"
 

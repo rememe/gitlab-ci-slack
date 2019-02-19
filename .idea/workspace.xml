@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5ba183a-760e-4787-8bda-d51205105823" name="Default" comment="" />
+    <list default="true" id="f5ba183a-760e-4787-8bda-d51205105823" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/index.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.coffee" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,8 +16,8 @@
       <file leaf-file-name="index.coffee" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+            <state relative-caret-position="418">
+              <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -23,7 +25,7 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
+            <state relative-caret-position="347">
               <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
             </state>
           </provider>
@@ -69,7 +71,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>diffL</find>
-      <find />
+      <find>2019-02-19T18:39:31.279349+00:00 app[web.1]:</find>
       <find>exist</find>
       <find>&lt;</find>
     </findStrings>
@@ -253,10 +255,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8976000" />
+    <option name="totallyTimeSpent" value="9234000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-371" y="-1447" width="2080" height="1136" extended-state="7" />
+    <frame x="-371" y="-1447" width="2080" height="1136" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
@@ -417,15 +419,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
+        <state relative-caret-position="347">
           <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        <state relative-caret-position="418">
+          <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
         </state>
       </provider>
     </entry>
