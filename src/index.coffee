@@ -42,7 +42,7 @@ app.post '/', (req, res) ->
   color = if success then "#36a64f" else "#ff2e2a"
 
   data =
-    attachments: {
+    attachments: [{
       color: color
       pretext: pretext
       text: text
@@ -50,7 +50,7 @@ app.post '/', (req, res) ->
         title: title
         value: value
       }
-    },
+    }],
     username: "Gitlab CI - #{body.project.name}"
 
   request.post(url: slackUrl, body: data, json: true)
