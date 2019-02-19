@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5ba183a-760e-4787-8bda-d51205105823" name="Default" comment="" />
+    <list default="true" id="f5ba183a-760e-4787-8bda-d51205105823" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.coffee" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,8 +19,17 @@
       <file leaf-file-name="index.coffee" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+            <state>
+              <caret column="2" selection-start-column="2" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -46,20 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="60" column="8" lean-forward="true" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
+            <state relative-caret-position="119">
+              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -69,6 +74,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>diffL</find>
+      <find>2019-02-19T18:39:31.279349+00:00 app[web.1]:</find>
+      <find>exist</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -94,8 +101,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/index.coffee" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/index.coffee" />
       </list>
     </option>
   </component>
@@ -104,6 +111,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
@@ -156,6 +166,7 @@
     <property name="node.js.selected.package.prettier" value="C:\Users\alex\AppData\Roaming\npm\node_modules\prettier" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="E:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RunDashboard">
@@ -241,16 +252,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550597670895</updated>
-      <workItem from="1550597674590" duration="3547000" />
+      <workItem from="1550597674590" duration="4982000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3547000" />
+    <option name="totallyTimeSpent" value="4982000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-371" y="-1447" width="2080" height="1136" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
       <window_info id="Azure Explorer" order="8" weight="0.32970297" />
@@ -277,8 +287,8 @@
       <window_info anchor="bottom" id="HDInsight Spark Submission" order="16" weight="0.32909605" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49634066" weight="0.26708075" />
       <window_info anchor="bottom" id="Version Control" order="15" weight="0.32932934" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4990099" visible="true" weight="0.2962963" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49731904" visible="true" weight="0.21980198" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4990099" visible="true" weight="0.2962963" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49731904" visible="true" weight="0.21980198" />
       <window_info anchor="right" id="Google Cloud Storage" order="14" />
       <window_info anchor="bottom" id="Remote Spark Job in Cluster" order="12" />
       <window_info anchor="bottom" id="Debug Remote Spark Job in Cluster" order="18" />
@@ -310,16 +320,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/index.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -330,6 +330,9 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gruntfile.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -337,17 +340,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/src/index.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="60" column="8" lean-forward="true" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
+        <state relative-caret-position="500">
+          <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
         </state>
       </provider>
     </entry>

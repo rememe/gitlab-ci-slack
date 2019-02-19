@@ -22,7 +22,6 @@ getTime = (body) ->
   "#{min}:#{sec}"
 
 app.post '/', (req, res) ->
-  console.log("Slack URL: ", slackUrl)
   body = req.body
 
   pipeline = body.object_attributes.id
@@ -52,6 +51,8 @@ app.post '/', (req, res) ->
       }
     }],
     username: "Gitlab CI - #{body.project.name}"
+
+  console.log(JSON.stringify(data))
 
   request.post(url: slackUrl, body: data, json: true)
   res.send 'ok'
