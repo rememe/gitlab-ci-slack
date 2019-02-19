@@ -25,6 +25,11 @@ getTime = (body) ->
 
   "#{min}:#{sec}"
 
+app.post '/webhook/slack/deploy', (req, res) ->
+  console.log(req.body)
+  console.log(req.params)
+  res.send 'ok'
+
 app.post '/', (req, res) ->
   body = req.body
 
