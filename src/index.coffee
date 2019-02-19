@@ -52,9 +52,7 @@ app.post '/', (req, res) ->
     }],
     username: "Gitlab CI - #{body.project.name}"
 
-  console.log(data)
+  console.log(JSON.stringify(data))
 
   request.post(url: slackUrl, body: data, json: true)
   res.send 'ok'
-
-app.listen port
