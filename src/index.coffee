@@ -21,6 +21,9 @@ getTime = (body) ->
   sec = Math.floor((diff / 1000) % 60)
   "#{min}:#{sec}"
 
+app.post '/webhook/slack', (req, res) ->
+
+
 app.post '/', (req, res) ->
   body = req.body
 
@@ -36,7 +39,7 @@ app.post '/', (req, res) ->
 
   pretext = "<#{projectUrl}|#{projectName}>: Gitlab CI pipeline <#{pipelineUrl(body)}|##{pipeline}> of branch <#{branchUrl(body)}|#{branch}> #{status}."
   text = "by #{authorName} (#{authorUsername})"
-  title = "<#{branchUrl(body)}|#{branch}>"
+  title = branch
   value = "in #{getTime(body)}"
   color = if success then "#36a64f" else "#ff2e2a"
 
