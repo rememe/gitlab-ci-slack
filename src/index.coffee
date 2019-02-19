@@ -34,9 +34,9 @@ app.post '/', (req, res) ->
   success = if body.object_attributes.status == "success" then true else false
   status = if success then "passed" else "failed"
 
-  pretext = "<#{projectUrl}|#{projectName}>: Gitlab CI pipeline <##{pipeline}|#{pipelineUrl(body)}> of branch <#{branch}|#{branchUrl(body)}> #{status}."
+  pretext = "<#{projectUrl}|#{projectName}>: Gitlab CI pipeline <#{pipelineUrl(body)}|##{pipeline}> of branch <#{branchUrl(body)}|#{branch}> #{status}."
   text = "by #{authorName} (#{authorUsername})"
-  title = "<#{branch}|#{branchUrl(body)}>"
+  title = "<#{branchUrl(body)}|#{branch}>"
   value = "in #{getTime(body)}"
   color = if success then "#36a64f" else "#ff2e2a"
 
@@ -45,14 +45,12 @@ app.post '/', (req, res) ->
       color: color
       pretext: pretext
       text: text
-      fields: {
+      fields: [{
         title: title
         value: value
-      }
+      }]
     }],
     username: "Gitlab CI - #{body.project.name}"
-
-  console.log(JSON.stringify(data))
 
   request.post(url: slackUrl, body: data, json: true)
   res.send 'ok'
