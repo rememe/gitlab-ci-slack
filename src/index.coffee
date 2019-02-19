@@ -22,6 +22,7 @@ getTime = (body) ->
   "#{min}:#{sec}"
 
 app.post '/', (req, res) ->
+  console.log("Slack URL: ", slackUrl)
   body = req.body
 
   pipeline = body.object_attributes.id
