@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5ba183a-760e-4787-8bda-d51205105823" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.coffee" afterDir="false" />
-    </list>
+    <list default="true" id="f5ba183a-760e-4787-8bda-d51205105823" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +69,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>diffL</find>
-      <find>2019-02-19T18:39:31.279349+00:00 app[web.1]:</find>
+      <find />
       <find>exist</find>
       <find>&lt;</find>
     </findStrings>
@@ -257,10 +253,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6671000" />
+    <option name="totallyTimeSpent" value="7003000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-371" y="-1447" width="2080" height="1136" extended-state="6" />
+    <frame x="-371" y="-1447" width="2080" height="1136" extended-state="7" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
       <window_info id="Azure Explorer" order="8" weight="0.32970297" />

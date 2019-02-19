@@ -27,6 +27,10 @@ app.post '/webhook/slack', (req, res) ->
 app.post '/', (req, res) ->
   body = req.body
 
+  if body.object_attributes.status != "success" || body.object_attributes.status != "failed"
+    res.send 'ok'
+    return
+
   pipeline = body.object_attributes.id
   projectName = body.project.path_with_namespace
   projectUrl = body.project.web_url
