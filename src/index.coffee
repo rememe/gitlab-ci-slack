@@ -8,6 +8,7 @@ slackUrl = process.env['SLACK_URL']
 app = express()
 app.use bodyParser.json()
 
+
 pipelineUrl = (body) ->
   "https://gitlab.com/#{body.project.path_with_namespace}/pipelines/#{body.object_attributes.id}"
 
