@@ -27,7 +27,7 @@ app.post '/webhook/slack', (req, res) ->
 app.post '/', (req, res) ->
   body = req.body
 
-  if body.object_attributes.status != "success" || body.object_attributes.status != "failed"
+  if body.object_attributes.status != "success" && body.object_attributes.status != "failed"
     res.send 'ok'
     return
 
