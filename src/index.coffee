@@ -17,8 +17,8 @@ branchUrl = (body) ->
 
 getTime = (body) ->
   duration = body.object_attributes.duration
-  min = Math.floor((duration / 1000) / 60)
-  sec = Math.floor((duration / 1000) % 60)
+  min = Math.floor(duration  / 60)
+  sec = Math.floor(duration  % 60)
 
   min = ('0' + min).slice(-2)
   sec = ('0' + sec).slice(-2)
@@ -36,7 +36,7 @@ app.post '/', (req, res) ->
   projectName = body.project.path_with_namespace
   projectUrl = body.project.web_url
   branch = body.object_attributes.ref
-  environment = body.builds[0].name
+  environment = if body.builds[0].status == 'manual' then body.builds[1].name else body.builds[0].name
   authorName = "#{body.user.name}"
   authorUsername = "#{body.user.username}"
 
