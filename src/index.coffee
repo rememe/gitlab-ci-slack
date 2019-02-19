@@ -7,6 +7,7 @@ slackUrl = process.env['SLACK_URL']
 
 app = express()
 app.use bodyParser.json()
+app.use bodyParser.urlencoded { extended: true }
 
 
 pipelineUrl = (body) ->
