@@ -16,9 +16,9 @@ branchUrl = (body) ->
   "https://gitlab.com/#{body.project.path_with_namespace}/commits/#{body.object_attributes.ref}"
 
 getTime = (body) ->
-  diff = Date.parse(body.object_attributes.finished_at) - Date.parse(body.object_attributes.created_at)
-  min = Math.floor((diff / 1000) / 60)
-  sec = Math.floor((diff / 1000) % 60)
+  duration = body.object_attributes.duration
+  min = Math.floor((duration / 1000) / 60)
+  sec = Math.floor((duration / 1000) % 60)
 
   min = ('0' + min).slice(-2)
   sec = ('0' + sec).slice(-2)
