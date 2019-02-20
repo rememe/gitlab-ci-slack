@@ -50,7 +50,8 @@ app.post '/', (req, res) ->
     return
 
   pipeline = body.object_attributes.id
-  projectName = body.project.path_with_namespace
+  project = body.project.path_with_namespace
+  projectName = body.project.name
   projectUrl = body.project.web_url
   branch = body.object_attributes.ref
   environment = if body.builds[0].status == 'manual' then body.builds[1].name else body.builds[0].name
@@ -60,9 +61,9 @@ app.post '/', (req, res) ->
   success = if body.object_attributes.status == "success" then true else false
   status = if success then "passed" else "failed"
 
-  pretext = "<#{projectUrl}|#{projectName}>: Gitlab CI pipeline <#{pipelineUrl(body)}|##{pipeline}> of branch <#{branchUrl(body)}|#{branch}> #{status}."
+  pretext = "<#{projectUrl}|#{project}>: Gitlab CI pipeline <#{pipelineUrl(body)}|##{pipeline}> of branch <#{branchUrl(body)}|#{branch}> #{status}."
   text = "by #{authorName} (#{authorUsername})"
-  title = environment
+  title = "#{projectName} - #{environment}"
   value = "in #{getTime(body)}"
   color = if success then "#36a64f" else "#ff2e2a"
 
