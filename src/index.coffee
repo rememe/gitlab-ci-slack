@@ -16,6 +16,9 @@ pipelineUrl = (body) ->
 branchUrl = (body) ->
   "https://gitlab.com/#{body.project.path_with_namespace}/commits/#{body.object_attributes.ref}"
 
+getProjectUrl = (project) ->
+  "https://gitlab.com/#{project}/environments"
+
 getTime = (body) ->
   duration = body.object_attributes.duration
   min = Math.floor(duration  / 60)
@@ -37,7 +40,7 @@ app.post '/webhook/slack/deploy', (req, res) ->
     else undefined
 
   if project != undefined
-    res.send { text: "Manage project at: <https://gitlab.com/#{project}/environments|#{project}>" }
+    res.send { text: "Manage project at: <#{getProjectUrl(project)}|#{project}>" }
   else
     res.send { text: "Wrong project ID. Please use full form with group as namespace." }
 
@@ -61,10 +64,11 @@ app.post '/', (req, res) ->
   success = if body.object_attributes.status == "success" then true else false
   status = if success then "passed" else "failed"
 
-  pretext = "<#{projectUrl}|#{project}>: Gitlab CI pipeline <#{pipelineUrl(body)}|##{pipeline}> of branch <#{branchUrl(body)}|#{branch}> #{status}."
-  text = "by #{authorName} (#{authorUsername})"
+  pretext = "<#{projectUrl}|#{project}>: New build triggered by #{authorName} (#{authorUsername})"
+  text = "Gitlab CI pipeline <#{pipelineUrl(body)}|##{pipeline}> of branch <#{branchUrl(body)}|#{branch}> #{status}."
   title = "#{projectName} - #{environment}"
   value = "in #{getTime(body)}"
+  footer = if environment == "staging" then "Deploy to production manually <#{getProjectUrl(project)}|HERE>" else ""
   color = if success then "#36a64f" else "#ff2e2a"
 
   data =
@@ -72,6 +76,7 @@ app.post '/', (req, res) ->
       color: color
       pretext: pretext
       text: text
+      footer: footer
       fields: [{
         title: title
         value: value

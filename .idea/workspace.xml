@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5ba183a-760e-4787-8bda-d51205105823" name="Default" comment="" />
+    <list default="true" id="f5ba183a-760e-4787-8bda-d51205105823" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.coffee" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,8 +18,8 @@
       <file leaf-file-name="index.coffee" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="39" column="99" selection-start-line="39" selection-start-column="99" selection-end-line="39" selection-end-column="99" />
+            <state relative-caret-position="558">
+              <caret line="70" column="74" selection-start-line="70" selection-start-column="74" selection-end-line="70" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -253,7 +257,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13308000" />
+    <option name="totallyTimeSpent" value="18519000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-371" y="-1447" width="2080" height="1136" extended-state="6" />
@@ -284,7 +288,7 @@
       <window_info anchor="bottom" id="HDInsight Spark Submission" order="16" weight="0.32909605" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49634066" weight="0.26708075" />
       <window_info anchor="bottom" id="Version Control" order="15" weight="0.32932934" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4990099" visible="true" weight="0.2962963" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4990099" weight="0.4174174" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49731904" visible="true" weight="0.21980198" />
       <window_info anchor="right" id="Google Cloud Storage" order="14" />
       <window_info anchor="bottom" id="Remote Spark Job in Cluster" order="12" />
@@ -424,8 +428,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="39" column="99" selection-start-line="39" selection-start-column="99" selection-end-line="39" selection-end-column="99" />
+        <state relative-caret-position="558">
+          <caret line="70" column="74" selection-start-line="70" selection-start-column="74" selection-end-line="70" selection-end-column="74" />
         </state>
       </provider>
     </entry>
