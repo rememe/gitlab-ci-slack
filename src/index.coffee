@@ -37,7 +37,7 @@ app.post '/webhook/slack/deploy', (req, res) ->
     else undefined
 
   if project != undefined
-    res.send { text: "Manage project at: <https://gitlab.com/#{project}/environments|project>" }
+    res.send { text: "Manage project at: <https://gitlab.com/#{project}/environments|#{project}>" }
   else
     res.send { text: "Wrong project ID. Please use full form with group as namespace." }
 
