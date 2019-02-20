@@ -27,9 +27,20 @@ getTime = (body) ->
   "#{min}:#{sec}"
 
 app.post '/webhook/slack/deploy', (req, res) ->
-  console.log(req.body)
-  console.log(req.params)
-  res.send 'ok'
+  project = switch req.body.text
+    when 'payments' then 'pingl-app/backend-administration'
+    when 'backend' then 'pingl-app/backend'
+    when 'customer' then 'pingl-app/frontend/customer'
+    when 'staff' then 'pingl-app/frontend/staff'
+    when 'admin' then 'pingl-app/frontend/admin'
+    when 'landing' then 'pingl-app/landing-page'
+    else undefined
+
+  if project != undefined
+    res.send { text: "Manage project at: <https://gitlab.com/#{project}/environments|project>" }
+  else
+    res.send { text: "Wrong project ID. Please use full form with group as namespace." }
+
 
 app.post '/', (req, res) ->
   body = req.body
