@@ -61,7 +61,7 @@ app.post '/', (req, res) ->
   authorName = "#{body.user.name}"
   authorUsername = "#{body.user.username}"
 
-  success = if body.object_attributes.status == "success" then true else false
+  success = if body.object_attributes.status == "success" || body.object_attributes.status == "manual" then true else false
   status = if success then "passed" else "failed"
 
   pretext = "<#{projectUrl}|#{project}>: New build triggered by #{authorName} (#{authorUsername})"
